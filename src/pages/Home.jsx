@@ -2,14 +2,9 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useRef, useState } from "react";
 
 import sakura from "../assets/sakura.mp3";
-import HomeInfo from "../components/HomeInfo";
-import Loader from "../components/Loader";
+import { HomeInfo, Loader } from "../components";
 import { soundoff, soundon } from "../assets/icons";
-import { Island } from "../models/Island";
-import { Sky } from "../models/Sky";
-import { Plane } from "../models/Plane";
-import { Bird } from "../models/Bird";
-
+import { Bird, Island, Plane, Sky } from "../models";
 
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
@@ -69,8 +64,9 @@ const Home = () => {
       </div>
 
       <Canvas
-        className={`w-full h-screen bg-transparent ${isRotating ? "cursor-grabbing" : "cursor-grab"
-          }`}
+        className={`w-full h-screen bg-transparent ${
+          isRotating ? "cursor-grabbing" : "cursor-grab"
+        }`}
         camera={{ near: 0.1, far: 1000 }}
       >
         <Suspense fallback={<Loader />}>
@@ -88,10 +84,9 @@ const Home = () => {
             groundColor='#000000'
             intensity={1}
           />
+
           <Bird />
-
           <Sky isRotating={isRotating} />
-
           <Island
             isRotating={isRotating}
             setIsRotating={setIsRotating}
