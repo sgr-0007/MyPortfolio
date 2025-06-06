@@ -23,99 +23,72 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript,
-    angular
+    typescript
 } from "../assets/icons";
 
 export const skills = [
+    { imageUrl: javascript, name: "JavaScript", type: "Frontend" },
+    { imageUrl: typescript, name: "TypeScript", type: "Frontend" },
+    { imageUrl: react, name: "React", type: "Frontend" },
+    { imageUrl: nextjs, name: "Next.js", type: "Frontend" },
+    { imageUrl: tailwindcss, name: "Tailwind CSS", type: "Frontend" },
+    { imageUrl: redux, name: "Redux", type: "State Management" },
+    { imageUrl: nodejs, name: "Node.js", type: "Backend" },
+    { imageUrl: express, name: "Express.js", type: "Backend" },
+    { imageUrl: mongodb, name: "MongoDB", type: "Database" },
+    { imageUrl: git, name: "Git", type: "Version Control" },
+    { imageUrl: github, name: "GitHub", type: "Version Control" },
+  ];
+  
 
+  export const experiences = [
     {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
+      title: "Senior Full Stack Developer (Freelancing)",
+      company_name: "EpirocIT",
+      iconBg: "#fcd5ce",
+      date: "Jan 2025 – Present",
+      points: [
+        "Implemented React components with performance optimizations like code splitting and lazy loading.",
+        "Refactored .NET 8 Minimal APIs, reducing response times by ~25%.",
+        "Increased test coverage by 70% using Jest and React Testing Library.",
+      ],
     },
     {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
+      title: "Senior Front-End Developer",
+      company_name: "e2e Rosh IT Solutions India Pvt Ltd",
+      iconBg: "#a2d2ff",
+      date: "May 2021 - Sep 2023",
+      points: [
+        "Led Pfizer’s compliance platform development with SSR using Next.js, boosting engagement by 55%.",
+        "Improved data fetching performance with TanStack Query and reduced network calls.",
+        "Achieved 85% test coverage using Jest, RTL, and MSW.",
+        "Optimized SEO and reduced TTI by 40% after migrating to SSR-based architecture.",
+        "Built .NET 7 APIs for backend finance systems; integrated REST APIs for seamless frontend UX.",
+      ],
     },
     {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
+      title: "Front-End Developer",
+      company_name: "e2e Rosh IT Solutions India Pvt Ltd",
+      iconBg: "#b7e4c7",
+      date: "Mar 2019 - May 2021",
+      points: [
+        "Designed Team Management System for 500+ employees using React and ASP.NET Core.",
+        "Reduced workshop errors by 55% using React + Tailwind for component design.",
+        "Improved state handling using Redux Toolkit; conducted UI/UX upgrades improving satisfaction by 60%.",
+      ],
     },
     {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
+      title: "Trainee Java Developer",
+      company_name: "Excel Business Solutions",
+      iconBg: "#dee2ff",
+      date: "Dec 2018 - Mar 2019",
+      points: [
+        "Fixed SQL bugs and improved app stability by 40%.",
+        "Reduced data loading time by 15% via SQL optimization.",
+      ],
     },
-    
-    {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
-    },
-    {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
-    }
-    
-];
-
-export const experiences = [
-    {
-        title: "Trainee Java Developer",
-        company_name: "Excel Business Solutions",
-        iconBg: "#accbe1",
-        date: "Dec 2018 - Mar 2019",
-        points: [
-            "Collaborated with a Senior Engineer to resolve 40% of critical business logic and SQL query bugs in",
-            "Spring MVC app within 2 sprints, improving application stability.",
-            "Independently fixed a complex SQL query issue, reducing data loading time by 15%, enhancing user experience.",
-        ],
-    },
-    {
-        title: "Junior Software Developer",
-        company_name: "e2e Rosh IT Solutions India Private Limited",
-        iconBg: "#fbc3bc",
-        date: "Mar 2019 - Nov 2019",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility."],
-    },
-    {
-        title: "Software Developer Engineer",
-        company_name: "Epiroc",
-        iconBg: "#b7e4c7",
-        date: "Nov 2019 - May 2021",
-        points: [
-            "Developing and maintaining workshop management system using Asp.net webforms.",
-            "Participated in integrating and orchestrating the interface system for a global planning system, focusing on ASP.NET Core APIs and function apps.", 
-            " Additionally, utilized Azure Service Bus and explored Azure Storage for seamless integration.",
-        ],
-    },
-    {
-        title: "Senior Software Developer",
-        company_name: "e2e Rosh IT Solutions India Private Limited",
-        iconBg: "#a2d2ff",
-        date: "May 2021 - Aug 2023",
-        points: [
-            "Boosted task completion by 65% at Dynapac and reduced workshop turnaround time by 15% at Rock Drill Services through custom management systems.",
-            "Improved workshop efficiency at Rock Drill Services (200+ jobs) by implementing a Workshop Management System (Asp.NET, ADO.NET, MS SQL), lowering data entry errors by 35% and turnaround time by 15%.",
-            "Increased employee participation in Pfizer’s compliance program by 35% using a custom system built with React, Asp.NET Web API, MS SQL, and SSRS, raising awareness scores by 20%.",
-            "Modernized financial processes for Tobacco Board India (20+ branches) with a financial package (Angular, Java Spring Boot, MS SQL, SSRS), processing transactions 70% faster.",
-            "Gathered user feedback through usability testing, identified key pain points, and improved user satisfaction by 60% by incorporating feedback into UI/UX design and functionality",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-];
+  ];
+  
 
 export const socialLinks = [
     {
@@ -137,17 +110,46 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Real Estate Management System',
-        description: 'Developed a purpose-driven mobile application, exemplified by a feature-rich Todo List app that seamlessly integrates geolocation, image capturing, reminders, and deep linking, all designed with Material Design principles and following MVVM architecture for a polished user experience.',
-        link: 'https://github.com/sgr-0007/realEstTodo',
+      iconUrl: pricewise,
+      theme: 'btn-back-red',
+      name: 'Fracture Log',
+      description: 'GPT-4 powered fracture analysis tool using RDF and Ontology, visualized via React and styled with Tailwind.',
+      link: 'https://github.com/sgr-0007/Rdf-fractures',
+    },
+    {
+      iconUrl: snapgram,
+      theme: 'btn-back-blue',
+      name: 'AgroCropProtocol',
+      description: 'Blockchain-based crop insurance system leveraging Ethereum, ChainLink, and WorldCoin protocols.',
+      link: 'https://github.com/sgr-0007/agro-secure-protocol-eth-brussel',
+    },
+    {
+      iconUrl: threads,
+      theme: 'btn-back-green',
+      name: 'ImageCommerce',
+      description: 'Image selling app with user authentication, image upload, payment processing, and product management using NextAuth, ImageKit, and Razorpay. Installation: Clone repo, run npm install, then npm run dev.',
+      link: 'https://github.com/sgr-0007/imagekitcommerce',
+    },
+    {
+      iconUrl: summiz,
+      theme: 'btn-back-yellow',
+      name: 'ZK Memory Organ',
+      description: 'Privacy-first data store using ZK-SNARKs, IPFS, and PostgreSQL. Winner at ETH-Oxford Hackathon.',
+      link: 'https://github.com/sgr-0007/zk_memory_oragan',
+    },
+    {
+      iconUrl: estate,
+      theme: 'btn-back-purple',
+      name: 'E Waste Hub',
+      description: 'Secure e-waste transaction platform with Device Registration, 3rd party recycling, Stripe integration and admin dashboard.',
+      link: 'https://github.com/sgr-0007/electronicwastehub',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Language Model for Text Generation',
-        description: 'Developed a Java word prediction model using a custom hash table and n-gram techniques (up to trigrams) for probabilistic word sequence analysis.',
-        link: 'https://github.com/sgr-0007/MyLanguageModel',
-    }
-];
+        name: 'Intelligent Conversations',
+        description: 'RAG-powered chatbot using LangChain and OpenAI that can query external data sources like PDFs.',
+        link: 'https://github.com/sgr-0007/RAG-LangchainAI-Chatbot',
+      },
+  ];
+  
