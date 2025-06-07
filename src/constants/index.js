@@ -127,7 +127,7 @@ export const projects = [
       iconUrl: threads,
       theme: 'btn-back-green',
       name: 'ImageCommerce',
-      description: 'Image selling app with user authentication, image upload, payment processing, and product management using NextAuth, ImageKit, and Razorpay. Installation: Clone repo, run npm install, then npm run dev.',
+      description: 'Image selling app with secure authentication, image processing, payment processing, and product management using NextAuth, ImageKit, and Razorpay.',
       link: 'https://github.com/sgr-0007/imagekitcommerce',
     },
     {
