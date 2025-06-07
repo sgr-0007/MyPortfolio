@@ -22,8 +22,7 @@ const About = () => {
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          A Software Engineer, specializing in technical
-          education through hands-on learning and building applications.
+        Turning pixels into purpose, crafting frontend systems that speak both design and engineering fluently.
         </p>
       </div>
 
